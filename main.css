@@ -22,6 +22,12 @@ strong {
     text-decoration: underline;
 }
 
+em {
+    text-decoration: underline;
+    cursor: pointer;
+    color:#009786;
+}
+
 .top-line {
     background-color: #202020;
     color: white;
@@ -261,6 +267,36 @@ strong {
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {left: 0px; transition: .5s ease;}
 
+#info-0-txt {
+    width: 70vw;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#info-0-txt > span {
+    font-size: 2rem;
+    font-family: secondary;
+    font-weight: 800;
+    color: #009786;
+}
+
+#info-0-txt > p {
+    font-family: main;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+#info-0-txt .img-container {
+    text-align: left;
+}
+
+#info-0-txt .img-container > img{
+    width: 400px;
+    height: auto;
+}
+
 @keyframes mainAnimation {
     0% {transform: scale(0.5);}
     25% {transform: scale(0.6);}
@@ -328,6 +364,15 @@ strong {
     .main-line .dropdown > button {
         font-size: 0.8rem;
     }
+
+    #info-0-txt .img-container {
+        text-align: center;
+    }
+    
+    #info-0-txt .img-container > img{
+        width: 300px;
+        height: auto;
+    }
 }
 
 @media (max-width: 504px) {
@@ -360,6 +405,14 @@ strong {
 
     #print-types .widget > img{
         width: 300px;
+    }
+}
+
+@media (max-width: 420px) {
+    #info-0-txt .img-container > img{
+        margin-top: 20px;
+        width: 200px;
+        height: auto;
     }
 }
 
